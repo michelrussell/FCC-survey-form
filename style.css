@@ -7,3 +7,14 @@ body {
     margin: 20px auto 0 0;
     color: white;
 }
+
+#survey-form {
+    color: black;
+    background-color: lightgray;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    max-width: 400px;
+    border: black;
+    border-radius: 5px;
+    padding: 10px;
+}

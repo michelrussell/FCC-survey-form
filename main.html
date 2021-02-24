@@ -4,13 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css" type="text/css">
+    <link rel="stylesheet" href="/style.css" type="text/css">
     <title>FCC Survey Form</title>
 </head>
 <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <br/>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required/>
+        <br>
+
+        <label id="email-label" for="email">Email:</label>
+        <br>
+        <input type="email" id="email" placeholder="Enter your Email" required/>
+        <br>
+
+        <label id="number-label" for="age" name="age">Age (optional)</label>
+        <br>
+        <input id="number" type="number" min="0" max="100" name="age" placeholder="Age" required/>
+        <br>
+
+        <div id="checkbox">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="reccomendation">Definitely</label>
+            <input for="recommendation" type="checkbox" name="reccomendation" value="Definitely">
+
+            <label for="recommendation">No</label>
+            <input for="reccomendation" type="checkbox" name="reccomendation" value="No">
+        </div>
+
+        <div id="radio">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="reccomendation">Definitely</label>
+            <input for="recommendation" type="radio" name="reccomendation" value="Definitely">
+
+            <label for="recommendation">No</label>
+            <input for="reccomendation" type="radio" name="reccomendation" value="No">
+        </div>
+
+        <div>
+            <p>What is your current role?</p>
+            <select id="dropdown" name="role">
+                <option selected disabled>Select role:</option>
+                <option value="fulltime">Full-Time</option>
+                <option value="parttime">Part-Time</option>
+                <option value="jobless">Jobless</option>
+            </select>
+        </div>
+        
+        <div>
+            <p>Please write any comments below:</p>
+            <textarea name="comment" rows="4" cols="50"></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
     
 
 
