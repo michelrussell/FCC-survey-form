@@ -1,0 +1,9 @@
+body {
+    background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+    }
+
+#title {
+    text-align: center;
+    margin: 20px auto 0 0;
+    color: white;
+}
